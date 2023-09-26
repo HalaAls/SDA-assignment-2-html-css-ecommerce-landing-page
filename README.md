@@ -9,10 +9,10 @@
 - A header section with a logo and navigation menu.
 - A hero section with a catchy headline, subheading, and a call-to-action button.
 - A product showcase section with images, titles, and brief descriptions of featured products.
-
 - Incorporate customer reviews or testimonials to build trust and credibility.
 - Integrate a newsletter subscription form to capture user email addresses for marketing purposes.
 - A footer section with links to important pages, contact information, and social media icons.
+
 - Conduct accessibility testing using automated tools and assistive technologies, and fix any identified issues.
 
 

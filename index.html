@@ -5,8 +5,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is an ecommerce landing page">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
   <!-- <link rel="stylesheet" href="dist/style.css"> -->
   <title>SCSS Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -15,16 +19,16 @@
   <header class="header">
     <h1>Welcome to my SCSS Project</h1>
     <div class="logo">
-      <img src="/images/muffinLogo.png" alt="Jelly Muffin Logo" style="max-width:25vh;">
+      <img src="/images/logo.png" alt="Jelly Muffin Logo" style="max-width:25vh;">
     </div>
     <nav>
       <ul style="list-style: none;">
-       <li><a href="">Home</a></li> 
-        <li><a href="">Shop</a></li>
-        <li><a href="">About us</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Account</a></li>
-        <li><a href="">Your Cart</a></li>
+       <li><a href="#">Home</a></li> 
+        <li><a href="#product-section">Products</a></li>
+        <li><a href="#testimonials-section">Reviews</a></li>
+        <li><a href="#newsletter-section">Newsletter</a></li>
+        <li><a href="#footer">Contact Us</a></li>
+        <!-- <li><a href="#">Your Cart</a></li> -->
       </ul>
      </nav>
   </header>
@@ -33,7 +37,7 @@
     <!-- #TODO : A hero section with a catchy headline,
           subheading, and a call-to-action button. -->
    
-    <!-- Start of hero section -->
+    <!-- hero section starts -->
     <section id="hero-section">
       <!-- Hero section image -->
       <!-- ##checkItAgain: I might remove this image and use backgrond-image in css for this section -->
@@ -45,28 +49,165 @@
         <button>Shop our Products</button>
       </div>
     </section>
-    <!-- Ends of hero section -->
+    <!-- hero section ends -->
 
 
     <!-- #TODO: A product showcase section with images, 
         titles, and brief descriptions of featured products. -->
 
-    <!-- Starts of product showcase section -->
+    <!-- product showcase section start -->
     <section id="product-section">
-      <div></div>
+      
+      <div id="product-section-heading">
+        <h2>Our Product</h2>
+      </div>
+      <div id="product-container">
+        <!-- first product -->
+        <div class="box">
+          <img src="https://images.unsplash.com/photo-1571859812101-5512cab4416d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2564&q=80" alt="Raspberry chocolate image" width="250vh">
+          <h3 class="product-title">Chocolate</h3>
+          <p class="product-description">brief desc</p>
+        </div>
+        <!-- second product -->
+        <div class="box">
+          <img src="https://plus.unsplash.com/premium_photo-1667031518595-9cb4b0d504ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80" alt="" width="250vh">
+          <h3 class="product-title">Product Title</h3>
+          <p class="product-description">brief desc</p>
+        </div>
+        <!-- third product -->
+        <div class="box">
+          <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2535&q=80" alt="" width="250vh">
+          <h3 class="product-title">Truffles</h3>
+          <p class="product-description">brief desc</p>
+        </div>
+      </div>
     </section>
+    <!-- product showcase section ends -->
 
+    <!-- #TODO : Incorporate customer reviews or testimonials to build trust and credibility. -->
+    <!-- coustomer reviews starts -->
+    <section id="testimonials-section">
+      <div id="testimonials-section-header">
+        <h2>Customers Reviews</h2>
+      </div>
+      <!-- testimonials-container -->
+      <div id="testimonials-container">
+        <!-- first testimonials-box -->
+        <div class="testimonials-box">
+          <!-- box top -->
+          <div class="box-top">
+            <!-- profile info -->
+            <div class="profile">
+              <div class="profile-img">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80" alt="user profile image" style="max-height: 20vh;">
+              </div>
+              <div class="user-name">
+                <strong>Mohammed</strong>
+              </div>
+            </div>
+            <!-- rate -->
+            <div class="rate">
+              <i>&#9733; &#9733; &#9733; &#9733; &#9733;</i>
+            </div>
+          </div>
+          <!-- box bottom -->
+          <div class="box-bottom">
+            <p>I like it</p>
+          </div>
+        </div>
+        <!-- second testimonials-box -->
+        <div class="testimonials-box">
+          <!-- box top -->
+          <div class="box-top">
+            <!-- profile info -->
+            <div class="profile">
+              <div class="profile-img">
+                <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2578&q=80" alt="user profile image" style="max-height: 20vh;">
+              </div>
+              <div class="user-name">
+                <strong>Khalid</strong>
+              </div>
+            </div>
+            <!-- rate -->
+            <div class="rate">
+              <i>&#9733; &#9733; &#9733; &#9733; &#9734;</i>
+            </div>
+          </div>
+          <!-- box bottom -->
+          <div class="box-bottom">
+            <p>Good</p>
+          </div>
+        </div>
+        <!-- third testimonials-box -->
+        <div class="testimonials-box">
+          <!-- box top -->
+          <div class="box-top">
+            <!-- profile info -->
+            <div class="profile">
+              <div class="profile-img">
+                <img src="https://images.unsplash.com/photo-1639747279286-c07eecb47a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=60" alt="user profile image" style="max-height: 20vh;">
+              </div>
+              <div class="user-name">
+                <strong>Hassan</strong>
+              </div>
+            </div>
+            <!-- rate -->
+            <div class="rate">
+              <i>&#9733; &#9733; &#9733; &#9733; &#9733;</i>
+            </div>
+          </div>
+          <!-- box bottom -->
+          <div class="box-bottom">
+            <p>Yummy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- coustomer reviews ends -->
 
+    <!-- #TODO : Integrate a newsletter subscription form 
+      to capture user email addresses for marketing purposes. -->
+      <!-- newsletter section starts -->
+      <section id="newsletter-section">
+        <div id="newsletter-header">
+          <h2> Subscribe To Our Newsletter</h2>
+        </div>
+        <div id="newsletter-form">
+          <form action="" method="post">
+            <label for="emailInput">Email</label>
+            <input type="email" name="email" id="emailInput">
+            <input type="submit">
+          </form>
+        </div>
+      </section>
+      <!-- newsletter section ends -->
+  
+      <!-- #TODO : A footer section with links to important 
+        pages, contact information, and social media icons. -->
+        <!-- footer starts -->
+        <footer id="footer">
+          <div id="important-links">
+            <ul>
+              <li><a href="https://chocolatebox.com.au/pages/returns-policy" aria-label="return policy">Return Policy</a></li>
+            </ul>
+          </div>
+          <div id="contact-info">
+            <p><strong>Tel: </strong>0112322020</p>
+            <p><strong>Whatsapp:</strong> 053438282</p>
+            <p><strong>Email: </strong> choco@gmail.com</p>
+          </div>
 
-
-
-
-
-    <!-- Ends of product showcase section -->
+          <div id="social-icons">
+            <a href="https://www.facebook.com/" aria-label="Facebook Link"><i class="fa fa-facebook-f" style="font-size:48px"></i></a>
+            <a href="https://twitter.com/" aria-label="Twitter Link"><i class="fa fa-twitter" style="font-size:48px"></i></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram Link"><i class="fa fa-instagram" style="font-size:48px"></i></a>
+          </div>
+        </footer>
+        <!-- footer ends -->
+  
 
 
   </main>
-
 
 
 
