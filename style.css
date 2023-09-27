@@ -1,0 +1,8 @@
+.header {
+    position: sticky;
+    background-color: antiquewhite;
+    top: 0;
+    padding:10px;
+    /* z-index: 100; */    
+}
+
