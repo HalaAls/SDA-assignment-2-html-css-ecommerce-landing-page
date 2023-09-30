@@ -61,7 +61,7 @@ section {
   background: url(./images/Banner.png) no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 .hero-section h1 {
@@ -308,8 +308,3 @@ input[type="submit"] {
   }
 }
 
-@media (max-width: 200px){
-  .hero-section{
-    background-size: contain;
-  }
-}
