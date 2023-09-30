@@ -1,13 +1,308 @@
-// src/styles/style.scss
+// variables
+$primary-color: #fcf5ee;
+$secondary-color: #4d2e07;
+$details-color: #903b0d;
+$basic-color: #a97b4c;
+$font-family: "EB Garamond", serif;
+$font-family: "Young Serif", serif;
+* {
+  font-family: "EB Garamond", serif;
+  font-family: "Young Serif", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; */
+}
+header {
+  background-color: $secondary-color;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+  .logo {
+    text-decoration: none;
+    color: $primary-color;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.9em;
+  }
+  .navigation {
+    a {
+      text-decoration: none;
+      color: $primary-color;
+      font-size: 1.1em;
+      font-weight: 100;
+      padding-left: 5px;
+      padding-right: 15px;
+      justify-content: center;
 
-$primary-color: #3498db;
-
-body {
-  font-family: Arial, sans-serif;
+      &:hover {
+        background-color: $details-color;
+        opacity: 0.8;
+        color: $primary-color;
+        border-radius: 10px;
+      }
+    }
+  }
 }
 
-.header {
+section {
+  padding: 100px 200px;
+  .title {
+    display: flex;
+    justify-content: center;
+    color: $secondary-color;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.hero-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../images/BannerCacao.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /* background-attachment: fixed; */
+  h1 {
+    color: $primary-color;
+    font-size: 2em;
+    font-weight: 500;
+  }
+  p {
+    color: $primary-color;
+    font-size: 1.3em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .hero-btn {
+    color: $secondary-color;
+    background-color: $primary-color;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 0.5em;
+    /* margin-bottom: 10px; */
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: 0.7s;
+    &:hover {
+      opacity: 0.9;
+      transform: scale(1.1);
+    }
+  }
+}
+#testimonials-section {
   background-color: $primary-color;
-  color: white;
-  padding: 1rem;
+  .container {
+    .card {
+      background-color: white;
+      width: 21em;
+      box-shadow: 0px 5px 29px rgb(1 1 1 /15%);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      transition: 0.7s;
+      &:hover {
+        transform: scale(1.1);
+      }
+      .card-img {
+        display: flex;
+        justify-content: center;
+        .customer-img {
+          width: 10vh;
+          border-radius: 50%;
+        }
+      }
+      .card-info {
+        text-align: center;
+        h3 {
+          color: $secondary-color;
+          font-size: 1.2em;
+          font-weight: 700;
+          margin: 10px;
+        }
+        i {
+          color: $details-color;
+        }
+        p {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+#product-section {
+  .container {
+    margin-top: 30px;
+    .product-card {
+      background-color: $primary-color;
+      border: 1px solid $details-color;
+      min-height: 14em;
+      width: 23em;
+      overflow: hidden;
+      border-radius: 10px;
+      margin: 20px;
+      transition: 0.7s;
+      &::hover {
+        transform: scale(1.1);
+        .product-img {
+          opacity: 0.9;
+        }
+      }
+      .product-img {
+        img {
+          width: 100%;
+        }
+      }
+      .product-info {
+        padding: 1em;
+        .product-description {
+          font-size: 0.8em;
+          color: $secondary-color;
+        }
+        .product-title {
+          display: flex;
+          justify-content: space-between;
+          text-transform: uppercase;
+          font-weight: 200;
+          margin-top: 10px;
+          color: $secondary-color;
+          .more {
+            text-decoration: none;
+            color: $details-color;
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.newsletter-section {
+  padding: 20px;
+  text-align: center;
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    label {
+      display: block;
+      font-size: 1.2em;
+      margin-bottom: 5px;
+      color: $secondary-color;
+    }
+    #emailInput {
+      width: 100%;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: 1px solid $secondary-color;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      background-color: $secondary-color;
+      color: $primary-color;
+      font-size: 1em;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+  }
+}
+.footer {
+  background-color: $secondary-color;
+  color: $primary-color;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  .footer-info {
+    font-size: 1.3em;
+    font-weight: 200;
+    a {
+      text-decoration: none;
+      color: $primary-color;
+      &:hover {
+        color: $basic-color;
+      }
+    }
+  }
+  .social-icons {
+    a {
+      color: $primary-color;
+      font-size: 48px;
+      padding: 0px 12px 0 0;
+      &:hover {
+        color: $basic-color;
+      }
+    }
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1023px) {
+  header {
+    padding: 12px 20px;
+    .navigation {
+      a {
+        padding-left: 10px;
+      }
+    }
+  }
+  section {
+    padding: 80px 20px;
+    .title {
+      font-size: 1.5em;
+    }
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .hero-section {
+    h1 {
+      font-size: 1.6em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  .newsletter-form {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 641px) {
+  body {
+    font-size: 12px;
+    .hero-section {
+      h1 {
+        font-size: 1.4em;
+      }
+      p {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+@media (max-width: 300px) {
+  body {
+    font-size: 10px;
+  }
 }

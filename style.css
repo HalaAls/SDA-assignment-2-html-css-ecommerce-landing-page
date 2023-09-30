@@ -1,5 +1,5 @@
 :root {
-  --promary-color: #fcf5ee;
+  --primary-color: #fcf5ee;
   --secondary-color: #4d2e07;
   --details-color: #903b0d;
   --basic-color: #a97b4c;
@@ -26,7 +26,7 @@ header {
 
 .logo {
   text-decoration: none;
-  color: var(--promary-color);
+  color: var(--primary-color);
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1.9em;
@@ -34,18 +34,17 @@ header {
 
 .navigation a {
   text-decoration: none;
-  color: var(--promary-color);
+  color: var(--primary-color);
   font-size: 1.1em;
   font-weight: 100;
   padding-left: 5px;
   padding-right: 15px;
   justify-content: center;
 }
-
 .navigation a:hover {
   background-color: var(--details-color);
   opacity: 0.8;
-  color: var(--promary-color);
+  color: var(--primary-color);
   border-radius: 10px;
 }
 
@@ -65,13 +64,13 @@ section {
 }
 
 .hero-section h1 {
-  color: var(--promary-color);
+  color: var(--primary-color);
   font-size: 2em;
   font-weight: 500;
 }
 
 .hero-section p {
-  color: var(--promary-color);
+  color: var(--primary-color);
   font-size: 1.3em;
   font-weight: 300;
   letter-spacing: 1px;
@@ -81,7 +80,7 @@ section {
 
 .hero-btn {
   color: var(--secondary-color);
-  background-color: var(--promary-color);
+  background-color: var(--primary-color);
   font-size: 1.1em;
   font-weight: 700;
   padding: 0.5em;
@@ -148,17 +147,17 @@ section {
   color: var(--secondary-color);
 }
 
-#testimonials-section{
-  background-color: var(--promary-color);
+#testimonials-section {
+  background-color: var(--primary-color);
 }
 /* #product-section {
-   background-color: var(--promary-color); 
+   background-color: var(--primary-color); 
 } */
 #product-section .container {
   margin-top: 30px;
 }
 .product-card {
-  background-color: var(--promary-color);
+  background-color: var(--primary-color);
   border: 1px solid var(--details-color);
   min-height: 14em;
   width: 23em;
@@ -200,7 +199,7 @@ section {
 }
 .footer {
   background-color: var(--secondary-color);
-  color: var(--promary-color);
+  color: var(--primary-color);
   padding: 2em;
   display: flex;
   justify-content: space-between;
@@ -211,13 +210,13 @@ section {
 }
 .footer-info a {
   text-decoration: none;
-  color: var(--promary-color);
+  color: var(--primary-color);
 }
 .footer-info a:hover {
   color: antiquewhite;
 }
 .social-icons a {
-  color: var(--promary-color);
+  color: var(--primary-color);
   font-size: 48px;
   padding: 0px 12px 0 0;
 }
@@ -256,7 +255,7 @@ label {
 /* Styles for the submit button */
 input[type="submit"] {
   background-color: var(--secondary-color);
-  color: var(--promary-color);
+  color: var(--primary-color);
   font-size: 1em;
   padding: 10px 20px;
   border: none;
@@ -310,4 +309,3 @@ input[type="submit"] {
     font-size: 10px;
   }
 }
-
