@@ -1,7 +1,7 @@
 :root {
   --promary-color: #f7f7f7;
   --secondary-color: #854836;
-  --details-color: #f5b553;
+  --details-color: #c4806c;
   --basic-color: #000000;
 }
 * {
@@ -72,7 +72,7 @@ section {
 
 .hero-section p {
   color: var(--promary-color);
-  font-size: 1, 3em;
+  font-size: 1.3em;
   font-weight: 300;
   letter-spacing: 1px;
   margin-top: 10px;
@@ -148,10 +148,8 @@ section {
   color: var(--secondary-color);
 }
 
-
-
 #product-section {
-  background-color: #0000002f;
+  background-color: var(--promary-color);
 }
 #product-section .container {
   margin-top: 30px;
@@ -169,30 +167,142 @@ section {
 .product-card:hover {
   transform: scale(1.1);
 }
-.product-card:hover .product-img{
+.product-card:hover .product-img {
   opacity: 0.9;
 }
-.product-img img{
+.product-img img {
   width: 100%;
 }
-.product-info{
+.product-info {
   padding: 1em;
 }
-.product-description{
+.product-description {
   font-size: 0.8em;
   color: var(--secondary-color);
 }
-.product-title{
+.product-title {
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
   font-weight: 200;
   margin-top: 10px;
 }
-.more{
+.more {
   text-decoration: none;
   color: var(--details-color);
 }
-.more{
+.more {
   color: #e78b00;
+}
+.footer {
+  background-color: var(--secondary-color);
+  color: var(--promary-color);
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-info {
+  font-size: 1.3em;
+  font-weight: 200;
+}
+.footer-info a {
+  text-decoration: none;
+  color: var(--promary-color);
+}
+.footer-info a:hover {
+  color: antiquewhite;
+}
+.social-icons a {
+  color: var(--promary-color);
+  font-size: 48px;
+  padding: 0px 12px 0 0;
+}
+
+/* Styles for the newsletter section */
+.newsletter-section {
+  padding: 20px;
+  text-align: center;
+}
+/* Styles for the newsletter form */
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+/* Styles for the label */
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: var(--secondary-color);
+}
+
+/* Styles for the email input field */
+#emailInput {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+/* Styles for the submit button */
+input[type="submit"] {
+  background-color: var(--secondary-color);
+  color: var(--promary-color);
+  font-size: 1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 1023px) {
+  header {
+    padding: 12px 20px;
+  }
+  .navigation a {
+    padding-left: 10px;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+  section {
+    padding: 80px 20px;
+  }
+  .hero-section h1 {
+    font-size: 1.6em;
+  }
+  .hero-section p {
+    font-size: 1em;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter-form {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 641px) {
+  body {
+    font-size: 12px;
+  }
+  .hero-section h1 {
+    font-size: 1.4em;
+  }
+  .hero-section p {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    font-size: 10px;
+  }
 }
