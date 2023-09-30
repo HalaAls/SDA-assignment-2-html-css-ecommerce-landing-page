@@ -58,7 +58,7 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(https://images.unsplash.com/photo-1551578657-a7e74acb0135?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80) no-repeat;
+  background: url(/images/Banner.png) no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
