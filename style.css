@@ -1,8 +1,8 @@
 :root {
-  --promary-color: #f7f7f7;
-  --secondary-color: #854836;
-  --details-color: #c4806c;
-  --basic-color: #000000;
+  --promary-color: #fcf5ee;
+  --secondary-color: #4d2e07;
+  --details-color: #903b0d;
+  --basic-color: #a97b4c;
 }
 * {
   font-family: "EB Garamond", serif;
@@ -186,13 +186,14 @@ section {
   text-transform: uppercase;
   font-weight: 200;
   margin-top: 10px;
+  color: var(--secondary-color);
 }
 .more {
   text-decoration: none;
   color: var(--details-color);
 }
-.more {
-  color: #e78b00;
+.more:hover {
+  color: var(--secondary-color);
 }
 .footer {
   background-color: var(--secondary-color);
