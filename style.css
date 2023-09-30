@@ -3,7 +3,6 @@
   --secondary-color: #4d2e07;
   --details-color: #903b0d;
   --basic-color: #a97b4c;
-  --header-color:#614124;
 }
 * {
   font-family: "EB Garamond", serif;
@@ -15,7 +14,7 @@
 }
 
 header {
-  background-color: var(--header-color);
+  background-color: var(--secondary-color);
   width: 100%;
   position: fixed;
   z-index: 999;
@@ -59,7 +58,7 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(./images/Banner.png) no-repeat;
+  background: url(./images/BannerCacao.png) no-repeat;
   background-size: cover;
   background-position: center center;
   /* background-attachment: fixed; */
@@ -200,7 +199,7 @@ section {
   color: var(--secondary-color);
 }
 .footer {
-  background-color: var(--header-color);
+  background-color: var(--secondary-color);
   color: var(--promary-color);
   padding: 2em;
   display: flex;
