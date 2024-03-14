@@ -1,5 +1,5 @@
 # Assignment: E-commerce Landing Page - HTML/CSS/SASS/Animation
-
+You want to see the result ? here it is 😍 : https://halaals.github.io/SDA-assignment-2-html-css-ecommerce-landing-page/
 
 ## Sub-Assignment: Develop an Ecommerce Landing Page (HTML & Web Accessibility)
 
